@@ -1,9 +1,10 @@
 Efgame::Application.routes.draw do
+
+  captcha_route
   get "users/index"
   get "users/show"
   get "users/edit"
   get "users/destroy"
-  devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -58,4 +59,7 @@ Efgame::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+
+  devise_for :users, :controllers => { registrations: 'registrations' }
 end
