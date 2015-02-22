@@ -119,6 +119,7 @@ fa:
       too_long: بلند است (حداکثر %{count} کاراکتر)
       too_short: کوتاه است (حداقل %{count} کاراکتر)
       wrong_length: نااندازه است (باید %{count} کاراکتر باشد)
+
     template:
       body: ! 'موارد زیر مشکل داشت:'
       header:
@@ -213,6 +214,9 @@ fa:
             password_confirmation: 'تکرار رمز عبور'
             remember_me: 'مرا به خاطر بسپار'
             username: 'نام کاربری'
+            birth_year: 'سال تولد'
+            name: 'نام'
+            lastname: 'نام خانوادگی'
 
         setting:
             user_privacy_status: 'نوع پروفایل'
@@ -349,6 +353,7 @@ fa:
       send_instructions: ایمیلی حاوی راهنمای باز کردن حسابتان در چند دقیقه آینده به شما ارسال خواهد شد.
       send_paranoid_instructions: اگر حساب شما وجود داشته باشد، تا چند دقیقه‌ی دیگر یک ایمیل حاوی توضیحات نحوه‌ی باز کردن قفل حساب‌تان برای شما ارسال می‌شود.
       unlocked: حسابتان با موفقیت باز شد. اکنون وارد شدید.
+    invalid_captcha: عبارت تصادفی را درست وارد نکرده اید.
   errors:
     messages:
       already_confirmed: قبلا تایید شده است

@@ -49,3 +49,5 @@ gem 'devise'
 #captcha
 gem 'easy_captcha'
 gem 'rmagick'
+
+gem 'devise_security_extension'

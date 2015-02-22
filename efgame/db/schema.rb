@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150220222855) do
+ActiveRecord::Schema.define(version: 20150222152227) do
+
+  create_table "simple_captcha_data", force: true do |t|
+    t.string   "key",        limit: 40
+    t.string   "value",      limit: 6
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "simple_captcha_data", ["key"], name: "idx_key"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -31,6 +40,11 @@ ActiveRecord::Schema.define(version: 20150220222855) do
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
     t.string   "username"
+    t.integer  "birth_day"
+    t.integer  "birth_month"
+    t.integer  "birth_year"
+    t.string   "name"
+    t.string   "lastname"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
