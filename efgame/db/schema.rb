@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150222152227) do
+ActiveRecord::Schema.define(version: 20150301235808) do
+
+  create_table "Games_Users", id: false, force: true do |t|
+    t.integer "game_id", null: false
+    t.integer "user_id", null: false
+  end
+
+  create_table "games", force: true do |t|
+    t.integer  "creater_id"
+    t.integer  "number_of_rounds"
+    t.integer  "number_of_players"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "simple_captcha_data", force: true do |t|
     t.string   "key",        limit: 40

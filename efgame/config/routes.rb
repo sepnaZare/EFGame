@@ -1,5 +1,7 @@
 Efgame::Application.routes.draw do
 
+  resources :games
+
   captcha_route
   get "users/index"
   get "users/show"

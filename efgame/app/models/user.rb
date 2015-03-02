@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
-
+  has_many :created_games, :class_name => "Game"
+  has_and_belongs_to_many :joined_games, :class_name => "Game"
   acts_as_easy_captcha
 
   # Include default devise modules. Others available are:
