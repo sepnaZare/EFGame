@@ -23,12 +23,19 @@ class GamesController < ApplicationController
   def create
     @game = Game.new(game_params)
     @game.creater_id = current_user.id
-    @game.players << current_user
+    if @game.save
+      game_roster = GameRoster.new(:player_id => current_user.id, :game_id => @game.id)
+      game_roster.save
+    end
+    #@game.players << current_user
     flash[:notice] = 'Game was successfully created.' if @game.save
       respond_with(@game)
   end
 
+
+
   def update
+    @game = Game.find(params[:id])
     flash[:notice] = 'Game was successfully updated.' if @game.update(game_params)
     respond_with(@game)
   end
@@ -44,6 +51,6 @@ class GamesController < ApplicationController
     end
 
     def game_params
-      params.require(:game).permit(:creater_id, :number_of_rounds, :number_of_players)
+      params.require(:game).permit(:creater_id, :number_of_rounds, :number_of_players, :players)
     end
 end

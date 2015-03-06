@@ -1,6 +1,9 @@
 class User < ActiveRecord::Base
-  has_many :created_games, :class_name => "Game"
-  has_and_belongs_to_many :joined_games, :class_name => "Game"
+  has_many :created_games, :class_name => "Game", :foreign_key => "creater_id"
+  has_many :game_rosters, :foreign_key => "player_id"
+  has_many :joined_games, through: :game_rosters, :source => :game
+
+  #has_and_belongs_to_many :joined_games, :class_name => "Game"
   acts_as_easy_captcha
 
   # Include default devise modules. Others available are:
