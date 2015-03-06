@@ -1,0 +1,31 @@
+<h1 >Listing games</h1>
+
+<table class="responstable"  >
+  <thead>
+    <tr>
+      <th >Creater</th>
+      <th >Number of rounds</th>
+      <th >Number of players</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @games.each do |game| %>
+      <tr >
+        <td ><%= game.creater_id %></td>
+        <td><%= game.number_of_rounds %></td>
+        <td><%= game.number_of_players %></td>
+        <td><%= link_to 'Show', game %></td>
+        <td><%= link_to 'Edit', edit_game_path(game) %></td>
+        <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+
+
+<%= link_to "<button>New Game</button>".html_safe, new_game_path , :id => "button_id", :class => "btn blue" %>
