@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Creater:</strong>
+  <%= @game.creater_id %>
+</p>
+
+<p>
+  <strong>Number of rounds:</strong>
+  <%= @game.number_of_rounds %>
+</p>
+
+<p>
+  <strong>Number of players:</strong>
+  <%= @game.number_of_players %>
+</p>
+
+<%= render 'join' %>
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>
