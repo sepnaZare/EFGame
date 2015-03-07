@@ -76,9 +76,15 @@ body {
     width: 27%;
 }
 
+<<<<<<< HEAD
 .name{
     font-family: 'BMitra', verdana, arial, helvetica, sans-serif;
     color: #FFFFFF;
+=======
+li.name {
+    font-family: 'BMitra', verdana, arial, helvetica, sans-serif;
+    color: #c9e2b3 !important;
+>>>>>>> cd8d3c3eb3c098d019df9aebbdd8095ad856a5b7
     position: absolute;
     right: 0px;
     text-align: right;
@@ -97,6 +103,12 @@ body {
 
 }
 
+<<<<<<< HEAD
 .colour{
     color: #c9e2b3;
 }
+=======
+div.colour a{
+    color: #c9e2b3 !important;
+}
+>>>>>>> cd8d3c3eb3c098d019df9aebbdd8095ad856a5b7
