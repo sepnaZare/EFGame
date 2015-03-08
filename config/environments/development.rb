@@ -22,8 +22,8 @@ Efgame::Application.configure do
       address:              'smtp.gmail.com',
       port:                 587,
       domain:               'gmail.com',
-      user_name:            'zeinab.meftah@gmail.com',
-      password:             '610433710',
+      user_name:            'fateme.ghanadi@gmail.com',
+      password:             '13710909fgh',
       authentication:       'plain',
       enable_starttls_auto: true
   }

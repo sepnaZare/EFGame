@@ -1,23 +1,13 @@
 Efgame::Application.routes.draw do
 
-<<<<<<< HEAD
   resources :game_rosters
-=======
-  resources :profiles
->>>>>>> cd8d3c3eb3c098d019df9aebbdd8095ad856a5b7
 
   resources :games
 
+  resources :profiles
   captcha_route
-  get "users/index"
-  get "users/show"
-  get "users/edit"
-  get "users/destroy"
-<<<<<<< HEAD
 
-=======
-  get "users/simple_form"
->>>>>>> cd8d3c3eb3c098d019df9aebbdd8095ad856a5b7
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -75,17 +65,5 @@ Efgame::Application.routes.draw do
   #   end
 
 
-<<<<<<< HEAD
   devise_for :users, :controllers => { registrations: 'registrations' }
 end
-=======
-  # devise_for :users, :controllers => { registrations: 'registrations' }
-
-  devise_for :users, :controllers => { :registrations => "users/registrations" } do
-#get '/author/sign_up', :to => 'devise/registrations#new'
-#get '/client/sign_up', :to => 'devise/registrations#new'
-    get '/user/sign_up', :to => 'users/registrations#new'
-  end
-
-end
->>>>>>> cd8d3c3eb3c098d019df9aebbdd8095ad856a5b7

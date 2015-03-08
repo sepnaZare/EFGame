@@ -13,7 +13,8 @@
 
 
 
-      <%= form_for current_user, url: {action: "edit"}, html: {class: "form-horizontal"} do |f| %>
+
+      <%= form_for current_user, url: profiles_path(current_user), method: :patch, html: {class: "form-horizontal"} do |f| %>
           <div class="row form-group">
 
             <div class=" col-xs-6 col-sm-6 col-md-6">

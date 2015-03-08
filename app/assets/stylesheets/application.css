@@ -34,19 +34,19 @@ body {
     right:10%;
 }
 /*.day {*/
-    /*width: 28% !important;*/
-    /*display: inline-block !important;*/
+/*width: 28% !important;*/
+/*display: inline-block !important;*/
 /*}*/
 /*.month {*/
-    /*width: 28% !important;*/
-    /*display: inline-block !important;*/
+/*width: 28% !important;*/
+/*display: inline-block !important;*/
 /*}*/
 /*.year {*/
-    /*width: 29% !important;*/
-    /*display: inline-block !important;*/
+/*width: 29% !important;*/
+/*display: inline-block !important;*/
 /*}*/
 /*.datelabel {*/
-    /*width: 12% !important;*/
+/*width: 12% !important;*/
 /*}*/
 .simple_captcha {
     border: none!important;
@@ -76,15 +76,9 @@ body {
     width: 27%;
 }
 
-<<<<<<< HEAD
-.name{
-    font-family: 'BMitra', verdana, arial, helvetica, sans-serif;
-    color: #FFFFFF;
-=======
 li.name {
     font-family: 'BMitra', verdana, arial, helvetica, sans-serif;
     color: #c9e2b3 !important;
->>>>>>> cd8d3c3eb3c098d019df9aebbdd8095ad856a5b7
     position: absolute;
     right: 0px;
     text-align: right;
@@ -103,12 +97,12 @@ li.name {
 
 }
 
-<<<<<<< HEAD
-.colour{
-    color: #c9e2b3;
-}
-=======
 div.colour a{
     color: #c9e2b3 !important;
 }
->>>>>>> cd8d3c3eb3c098d019df9aebbdd8095ad856a5b7
+
+.box_size{
+    width: 377px;
+    left: 25%;
+;
+}
