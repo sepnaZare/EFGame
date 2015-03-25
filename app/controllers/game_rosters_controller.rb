@@ -27,7 +27,7 @@ class GameRostersController < ApplicationController
     @game_roster.player = current_user
     current_user.game_rosters << @game_roster
     flash[:notice] = 'GameRoster was successfully created.' if @game_roster.save
-    respond_with(@game_roster)
+    redirect_to @game
   end
 
   def update
